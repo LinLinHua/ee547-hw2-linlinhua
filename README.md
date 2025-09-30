@@ -16,8 +16,8 @@ The README.md in your repository root must contain:
      - query GroupId --output text
 
 
-# run your script
-AWS_PROFILE=aws_inspector python aws_inspector.py --region us-east-1 --format table
+   - run your script:
+      - AWS_PROFILE=aws_inspector python aws_inspector.py --region us-east-1 --format table
 
 # 3) terminate and clean up
 AWS_PROFILE=aws_inspector aws ec2 terminate-instances --instance-ids <i-...> --region us-east-1
