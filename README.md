@@ -7,14 +7,13 @@ The README.md in your repository root must contain:
    - My account and region (us-east-1) doesn't has S3 bucket and EC2
      - [create S3 bucket]
       - AWS_PROFILE=aws_inspector aws s3api create-bucket 
-      -bucket <your-unique-bucket-name> --region us-east-1 
-      -create-bucket-configuration LocationConstraint=us-east-1
+      - bucket <your-unique-bucket-name> --region us-east-1 
+      - create-bucket-configuration LocationConstraint=us-east-1
 
    - [EC2]
-   - # 1) security group
-      AWS_PROFILE=aws_inspector aws ec2 create-security-group 
-     -group-name hw3-sg --description "temp sg" --region us-east-1 
-     -query GroupId --output text
+     - AWS_PROFILE=aws_inspector aws ec2 create-security-group 
+     - group-name hw3-sg --description "temp sg" --region us-east-1 
+     - query GroupId --output text
 
 
 # run your script
